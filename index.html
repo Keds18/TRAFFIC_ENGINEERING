@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head><!--Cabecera-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ideas Digitales</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Asi se vincula a una hoja de estilos css -->
+</head>
+
+<body><!--Cuerpo-->
+
+    <header id="main-header"> <!--Etiquetas semanticas, ideal ya no div, pero no cambia casi nada-->
+        <div class="container" id="header-content">
+            <div id="logo">
+                <!--
+                <h1>Ideas Digitales</h1>
+                <p>Tecnología y Creatividad al servicio de la Humanidad</p>
+                -->
+                <a href="index.html">
+                    <img src="images/logo1_3.png" alt="Logo" class="img-fluid">
+                </a>
+            </div>
+            <ul class="menu menu-main">
+                <li><a href="#nosotros">Nosotros</a></li>
+                <li><a href="#noticias">Conflicto Tráfico</a></li>
+                <li><a href="#empresa">Tráfico vehicular</a></li>
+                <li><a href="#historia">Externalidades Transporte</a></li>
+                <li><a href="#cursos">Modelos Tráfico</a></li>
+                <li><a href="#eventos">Microscópicas</a></li>
+                <li><a href="#valores">Macroscópicas</a></li>
+
+            </ul>            
+        </div><!-- container-->
+    </header><!-- main-header-->
+
+    <main id="main-content">
+
+    <!--<figure id="main-banner">
+        <!-- Banner principal, imagen grande
+        <img src="images/1.portada.jpeg" alt="">
+    </figure>-->
+
+    <figure id="main-banner" class="banner">
+    <!-- Imagen de fondo -->
+    <img src="images/1.portada.jpeg" alt="Transporte y Movilidad">
+
+    <!-- Texto dentro del banner -->
+    <figcaption class="banner-text">
+        <h1>Movilidad Inteligente</h1>
+        <p>"Soluciones de transporte que optimizan la ciudad y mejoran la vida de las personas"</p>
+        <a href="#nosotros" class="btn-banner">Más información</a>
+    </figcaption>
+    </figure>
+
+    <section id="nosotros" class="padded">
+        <div class="container">
+            <h2>Nosotros</h2>
+            <p>En KDS Company, trabajamos para hacer que la movilidad sea más segura, eficiente, inclusiva y sostenible. Somos un equipo de especialistas en tránsito y transporte comprometidos con mejorar la experiencia de desplazamiento de las personas y optimizar la circulación en nuestras ciudades.</p>
+            <p>Integramos ingeniería, tecnología, innovación e inteligencia artificial, para diseñar soluciones que reducen la congestión, fortalecen la seguridad vial y promueven sistemas de transporte modernos y sostenibles.</p>
+            <p>Creemos en el valor del transporte como motor de desarrollo social y económico, por ello acompañamos a nuestros clientes y comunidades con proyectos que generan un impacto positivo hoy y construyen la movilidad del mañana.</p>
+        </div><!-- container-->
+    </section><!-- nosotros-->
+    <aside id="concierto" class="padded">
+        <div class="row">
+                    <div class="col">
+                        <video class="video-fluid" controls autoplay>
+                            <source src="videos/1.flujo_vehi.mp4">
+                        </video>
+                    </div>
+                    <div class="col container">
+                        <h2>Flujo vehicular</h2>
+                        <p class="display-1">
+                            Se define como la cantidad de <br>
+                            vehículos que atraviesan un punto, sección o tramo de una vía
+                            <span class="texto-importante">en un intervalo de tiempo determinado.</span><br>
+                            Generalmente se expresa en vehículos por hora (veh/h), <br>
+                            aunque también puede representarse en vehículos por minuto o segundo, <br>
+                            dependiendo de la escala del análisis.
+                        </p>
+                    </div>
+        </div>
+    </aside>
+
+    <section id="noticias" class="padded">
+        <div class="container">
+            <h2>Conflicto Tráfico </h2>
+            <div class="row">
+                <article class="col">  <!-- articulo o noticias -->
+                    <figure>
+                        <img src="images/3.flujos_ininterrumpidos.jpeg" alt="" class="img-fluid">
+                    </figure>
+                    <h3>Conflictos Concurrenciales</h3><!-- paginas externas con target, para q se abra en otro enlace -->
+                    <p>Modelos de circulacion ininterrumpida o continua <a href="https://nap.nationalacademies.org/catalog/26432/highway-capacity-manual-7th-edition-a-guide-for-multimodal-mobility" target="_blank">Visite HCM</a> ,National Academies of Sciences, Engineering, and Medicine. 2022. Highway Capacity Manual 7th Edition: A Guide for Multimodal Mobility Analysis. Washington, DC: The National Academies Press. https://doi.org/10.17226/26432.</p>
+                    <p>Se tiene 1 vía con 2 vehículos con distintas velocidades, una mayor a la otra y ocurre el conflicto en el espacio de carril, porque quiere sobreparlo y no puede.</p>
+                    <p>Soluciones:V2 disminuye a la velocidad V1, V2 adelanta al V1 o el  V1 aumenta velocidad a la del V2.</p>
+                    <p>Casos: autopistas, carreteras, intercambos viales, etc.</p>
+                </article>
+                <article class="col">
+                    <figure>
+                        <img src="images/4.flujos_interrumpidos.jpeg" alt="" class="img-fluid">
+                    </figure>
+                    <h3>Conflictos Direccionales</h3>
+                    <p>Modelos de circulación interrumpida <a href="https://nap.nationalacademies.org/catalog/26432/highway-capacity-manual-7th-edition-a-guide-for-multimodal-mobility" target="_blank">Visite HCM</a> ,National Academies of Sciences, Engineering, and Medicine. 2022. Highway Capacity Manual 7th Edition: A Guide for Multimodal Mobility Analysis. Washington, DC: The National Academies Press. https://doi.org/10.17226/26432.</p>
+                    <p>Ocurre en el area común de un cruce de vias por distintos movimientos, como: cruces, convergencia, divergencia y entrelaces.</p>
+                    <p>Soluciones: Señal de priridad (un vehículo deja pasar siempre al otro) o colocacion de semáforo(vehículos se alternan el derecho de pasos.</p>
+                    <p>Casos: intersecciones tipo cruz, T, Y, rotondas, etc.</p>
+                </article>
+                <article class="col">
+                    <figure>
+                        <img src="images/5.conflictos_funcionales.jpeg" alt="" class="img-fluid">
+                    </figure>
+                    <h3>Conflictos Funcionales</h3>
+                    <p>Modelos de estaciones de transferencia:paraderos <a href="https://nap.nationalacademies.org/catalog/26432/highway-capacity-manual-7th-edition-a-guide-for-multimodal-mobility" target="_blank">Visite HCM</a> ,National Academies of Sciences, Engineering, and Medicine. 2022. Highway Capacity Manual 7th Edition: A Guide for Multimodal Mobility Analysis. Washington, DC: The National Academies Press. https://doi.org/10.17226/26432.</p>
+                    <p>En la zona de un paradero, un vehículo particular se aproxima al mismo tiempo que un bus se detiene, obstruyendo momentáneamente la vía. Esta condición obliga al conductor del vehículo a efectuar una maniobra de adelantamiento para poder continuar su recorrido.</p>
+                    <p>Soluciones: El vehículo particular (V2) espera a que el vehículo 1 (V1) finalice su detención o el V2 adelanta al V1, siempre que las condiciones de seguridad y la normativa de tránsito lo permitan.</p>
+                    <p>Casos: carreteras e intersecciones con paraderos o andenes.</p>
+                </article>
+            </div><!-- row-->
+        </div><!-- container-->
+    </section><!-- noticias-->
+
+    <section id="empresa">
+        <div class="container">
+            <div class="row">
+                <div class="col centrado-vertical">
+                    <h2>Tráfico vehicular</h2>
+                    <p>El tráfico vehicular es el fenómeno global de la circulación de vehículos en una red de transporte, que incluye la cantidad, movimiento, interacción y control de estos, y constituye la base para analizar la movilidad urbana y diseñar sistemas de transporte más eficientes. <a href="https://www.sancristoballibros.com/libro/ingenieria-de-transito_75507" target="_blank">Ingenieria de Transito</a></p>
+                </div>
+                <figure class="col imagen-texto">
+                    <img src="images/6.traffic_veh.jpeg" alt="" class="img-fluid">
+                    <figcaption>
+                        <h3>Objetivos</h3>
+                        <p>-Optimizar el uso de la capacidad existente.</p>
+                        <p>-Asegurar la calidad del servicio de transporte.</p>    
+                        <p>-Controlar y gestionar en modo degradado.</p> 
+                        <p>-Gestionar la demanda de la movilidad.</p>
+                    </figcaption>
+                </figure>
+            </div>
+        </div>
+    </section>
+
+    <section id="historia" class="padded">
+        <div class="container">
+        <h2>Externalidades Transporte</h2>
+            <p>El transporte genera una serie de externalidades, entendidas como los efectos indirectos —positivos o negativos— que impactan a la sociedad y que no siempre son asumidos por quienes producen o consumen el servicio de movilidad. Entre las externalidades negativas más relevantes se encuentran la congestión vehicular, que incrementa los tiempos de viaje y reduce la productividad; la contaminación ambiental y acústica, que deteriora la salud pública y la calidad de vida urbana; y los accidentes de tránsito, que conllevan altos costos sociales y económicos. Asimismo, el transporte contribuye al cambio climático por sus emisiones de gases de efecto invernadero.<a href="https://www.undp.org/sites/g/files/zskgke326/files/2022-12/undp-uy-publicacion-proyecto-MOVES-2022.pdf" target="_blank"">Externalidades</a></p>
+            <p>No obstante, también existen externalidades positivas, como la dinamización económica, la integración social y territorial, y el acceso a oportunidades educativas, laborales y culturales que el transporte facilita. La adecuada gestión de estas externalidades es fundamental para avanzar hacia un sistema de movilidad más eficiente, equitativo y sostenible.</p>
+        </div><!-- container-->
+    </section><!-- historia-->
+
+    <!--#cursos.padded>.container>h2{Cursos}+.row>.col*3>h3{Curso $}+p*2>lorem40-->
+    <section id="cursos" class="padded">
+        <div class="container">
+            <h2>Modelos Tráfico</h2>
+            <div class="row">
+                <article class="col col-50">
+                    <h3>Macroscópico</h3>
+                    <p>Planificación a largo plazo.</p>
+                    <p>Un modelo macroscópico de transporte es aquel que representa el flujo vehicular de manera agregada, similar al estudio de los fluidos, considerando a los vehículos como una corriente continua y no de forma individual. Este tipo de modelo se centra en variables globales como el flujo (vehículos/hora), la densidad (vehículos/km) y la velocidad promedio (km/h), las cuales se relacionan entre sí a través de la conocida relación fundamental del tráfico. Los modelos macroscópicos son útiles para analizar la capacidad de las vías, la formación y disipación de congestión, así como los impactos de cambios en la infraestructura o la demanda a gran escala. Se caracterizan por su menor nivel de detalle comparado con los modelos microscópicos, pero ofrecen mayor eficiencia computacional al simular grandes redes viales (Daganzo, 1994; Treiber & Kesting, 2013).</p>
+                    <p>El modelo de cuatro etapas del transporte constituye una de las metodologías más utilizadas en la planificación de la movilidad urbana y regional. Este modelo se estructura en cuatro fases secuenciales: generación de viajes, donde se estima el número de desplazamientos producidos y atraídos por una zona; distribución de viajes, que asigna esos desplazamientos entre orígenes y destinos mediante matrices de viajes; selección modal, en la que se determina qué proporción de viajes se realiza en cada modo de transporte (automóvil, transporte público, bicicleta, etc.); y asignación de rutas, que distribuye los viajes en la red vial o de transporte público, considerando tiempos de viaje, costos y congestión. Si bien este enfoque ha sido criticado por su carácter estático y simplificador frente a la complejidad de la movilidad real, sigue siendo una herramienta fundamental en la formulación de políticas de transporte, la evaluación de proyectos de infraestructura y la estimación de la demanda futura (Ortúzar & Willumsen, 2011; Cascetta, 2009).</p>
+                    <p>Herramientas:</p>
+                    <ul><!-- lista con viñetas-->
+                        <li>Transcad</li>
+                        <li>PTV Visum</li>
+                        <li>Cube</li>
+                        <li>Aimsum</li>
+                    </ul>
+                    <p>Ejemplos: Plan maestro de transporte, PMUS, etc. </p>
+                </article>
+                <article class="col">
+                    <h3>Mesoscópico</h3>
+                    <p>Planificación a mediano plazo.</p>
+                    <p>Un modelo mesoscópico de transporte es un enfoque intermedio entre los modelos macroscópicos (que representan los flujos de tránsito de manera agregada, como volúmenes y velocidades promedio) y los microscópicos (que simulan el comportamiento detallado de cada vehículo o peatón). En los modelos mesoscópicos, los vehículos se representan de manera individual, pero su movimiento a lo largo de la red no se calcula con la misma precisión física que en un modelo microscópico, sino que se aproxima mediante funciones de flujo, velocidad y tiempo de recorrido predefinidas. De esta forma, se logra un equilibrio entre realismo y eficiencia computacional, lo que permite simular redes de gran tamaño con un nivel de detalle mayor que en los modelos macroscópicos, pero con menores requerimientos de procesamiento que en los microscópicos. Este tipo de modelación resulta especialmente útil para el análisis de la congestión, evaluación de políticas de gestión de la demanda, semaforización adaptativa, y planificación táctica de redes de transporte (Cascetta, 2009; Barceló, 2010).</p>
+                    <p>Herramientas:</p>
+                    <ol><!-- lista enumeradas-->
+                        <li>Aimsum</li>
+                        <li>PTV Vissim</li>
+                        <li>Matsim</li>
+                        <li>SUMO</li>
+                    </ol>
+                    <p>Ejemplos: Seguridad vial, Sincronización de semaforos, estudios de impacto vial, etc. </p>
+                </article>
+                <article class="col">
+                    <h3>Microscópico</h3>
+                    <p>Planificación a corto plazo.</p>
+                    <p>El modelo microscópico de transporte es un enfoque de simulación que representa el comportamiento individual de cada vehículo y, en algunos casos, de cada peatón o ciclista dentro de una red vial. A diferencia de los modelos macroscópicos y mesoscópicos, este modelo no se centra en flujos agregados, sino en las interacciones dinámicas entre los agentes de tráfico (vehículos, conductores, peatones), considerando variables como aceleración, velocidad, cambio de carril, distancia de seguridad y reacciones frente a señales de tránsito o condiciones del entorno.
+                    Este tipo de modelos permite analizar con gran detalle fenómenos como la formación y disipación de congestión, el impacto de los semáforos, el comportamiento en intersecciones complejas, la seguridad vial o la introducción de nuevas tecnologías como los vehículos autónomos. Herramientas de simulación como SUMO, VISSIM, AIMSUN o MATSim suelen emplear este enfoque, siendo especialmente útiles en estudios de micromovilidad, semaforización adaptativa, eficiencia de transporte público y diseño de infraestructura urbana (Barceló, 2010; Fellendorf & Vortisch, 2010).</p>
+                    <p>Herramientas:</p>
+                    <ol type="a"><!-- lista con letras minusculas-->
+                        <li>SUMO</li>
+                        <li>PTV Vissim</li>
+                        <li>Aimsum</li>
+                        <li>Dynasim</li>
+                    </ol>
+                    <p>Ejemplos: Analisis de intersecciones, peajes, seguridad vial, estacionamientos, semáforos inteligentes, evacuaciones, etc. </p>
+                    <!--<ol type="i" start="8">
+                    </ol> numeros romanos-->
+                </article>
+            </div>
+        </div>
+    </section><!-- cursos-->
+
+    <!-- #eventos.padded>.container>h2 -->
+    <section id="eventos" class="padded">
+        <div class="container">
+            <h2>Variables Microscópicas</h2>
+            <div class="row">
+                <article class="col">
+                    <h3>Tiempo inter-vehicular (s/veh)</h3>
+                    <p>Conocido tambien como headway o frecuencia o separacion en segundos.</p>
+                    <p>La duración de tiempo que separa el paso de dos vehiculos sucesivos en una misma circulación.</p>
+                    <p>Usos: seguridad vial, coeficiente de equivalencia, estimacion de la capcidad, etc.</p>
+                    <p>Medición: sensores, camaras, cronómetros,camaras con computer vision, etc.</p>
+                </article>
+                <article class="col">
+                    <h3>Distancia inter-vehicular (m/veh)</h3>
+                    <p>Conocido tambien como espaciamiento en metros</p>
+                    <p>Distancia entre vehiculos en un tiempo dado entre 2 vehiculos sucesivos en una misma vía.</p>
+                    <p>Usos: seguridad vial</p>
+                    <p>Medición: camaras con computer vision</p>
+                </article>
+                <article class="col">
+                    <h3>Modelos de tránsito</h3>
+                    <h4>Modelos de seguimento vehicular</h4>
+                    <p>Seguimiento vehicular = dinámica longitudinal (cómo un vehículo sigue al de adelante).</p>
+                    <p>El modelo de seguimiento vehicular describe cómo un conductor ajusta su velocidad y distancia respecto al vehículo delantero, siendo clave para analizar la dinámica de flujo y congestión. Ejemplos destacados son el modelo de Gipps (1981), el Intelligent Driver Model (IDM) y el modelo de Newell, que permiten simular fenómenos como ondas de choque, embotellamientos y oscilaciones de velocidad.</p>
+                    <h4>Modelos de cambio de carril</h4>
+                    <p>Cambio de carril = dinámica lateral (cómo decide moverse entre carriles).</p>
+                    <p>El modelo de cambio de carril representa las decisiones de los conductores al modificar de carril, considerando factores de seguridad, motivación (ahorro de tiempo, evasión de obstáculos) y reglas de prioridad.</p>
+                </article>
+            </div>
+        </div>
+    </section><!-- eventos-->
+
+    <!--#valores.padded>.container>h2{Valores}+.row>.col*7>h3{Valor $}+p>lorem16-->
+    <section id="valores" class="padded">
+        <div class="container">
+            <h2>Variables Macroscópicas</h2>
+            <div class="row">
+                <article class="col col-25">
+                    <h3>Flujo o intensidad q (veh/h)</h3>
+                    <p>Número de vehículos que pasan por un punto dado durante el período de observación</p>
+                </article>
+                <article class="col col-25">
+                    <h3>Velocidad media u (km/h)</h3>
+                    <p>Velocidad media de movimiento sobre una longitud de carretera.</p>
+                </article>
+                <article class="col col-25">
+                    <h3>Densidad o concentración k (veh/km)</h3>
+                    <p>Número de vehículos presentes simultáneamente en una sección de longitud conocida.</p>
+                </article>
+                <article class="col col-50">
+                    <h3>Conversión de micro a macro</h3>
+                    <p>q=1/TIVpromedio</p>
+                    <p>k=1/DIVpromedio</p>
+                </article>
+                <article class="col col-50">
+                    <h3>Ecuacion fundamental del tráfico</h3>
+                    <p> q=u*k </p>
+                </article>
+            </div>
+        </div>
+    </section><!-- valores-->
+
+    <section id="equipo" class="padded">
+        <div class="container">
+            <h2>Nuestro equipo</h2>
+            <div class="row">
+                <div class="col">
+                    <img src="images/7.ejectivo_avatar.png" alt="" class="img-fluid">
+                    <h3>CEO</h3>
+                    <p>Kevin Galindo Antezana.</p>
+                </div>
+                <div class="col">
+                    <img src="images/8_ejecutivo2.jpg" alt="" class="img-fluid">
+                    <h3>CAO</h3>
+                    <p>Maria del Carpio</p>
+                </div>
+                <div class="col">
+                    <img src="images/9_ejecutivo3.jpeg" alt="" class="img-fluid">
+                    <h3>COO</h3>
+                    <p>Jose de la Torre</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    </main>
+
+    <footer id="main-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    © 2025 Traffic_engineering| Kevin Galindo Antezana |Todos los derechos reservados | 📧Contacto: keds1810@gmail.com
+                </div>
+                <div class="col redes-sociales">
+                    <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://x.com/"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="https://www.tiktok.com/"><i class="fa-brands fa-tiktok"></i></a>
+                    <a href="https://www.youtube.com/"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
